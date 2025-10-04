@@ -43,11 +43,9 @@ int main(){
 					bitMax = bitMax/2;
 					
 					//printf("\nSum: %.0f, numDec: %d, multBin: %.0f, bitMax: %d\n", sum, numDec, multBin, bitMax);
-					if(numDec <= 1){
-					    //Após o fim de toda a verificação, caso o numDec seja 1, sum receberá 1, para que o valor final seja ímpar, e, caso seja 0, o valor de sum se manterá o mesmo.
-					    sum += numDec%2;
-					}
 				}
+				//Após o fim de toda a verificação, caso o numDec seja 1, sum receberá 1, para que o valor final seja ímpar, e, caso seja 0, o valor de sum se manterá o mesmo.
+				sum += numDec%2;
 				
 				printf("\nDecimal: %d\nBinario: %.0f\n\n", saveDec, sum);
 			break;
